@@ -18,7 +18,7 @@ public class ConnectionFactory {
     
     public Connection getConexao(){
         try{
-            // TENTA ESTABELECER A CONEXÃO COM O BANCO DE DADOS MYSQL PASSANDO OS PARÂMETROS (ENDEREÇO, NOME DA TABELA, USUÁRIO E SENHA)
+            // TENTA ESTABELECER A CONEXÃO COM O BANCO DE DADOS MYSQL PASSANDO OS PARÂMETROS (ENDEREÇO, NOME DO BANCO DE DADOS, USUÁRIO E SENHA)
             conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/"+"mercado","root","");
             if(conn!=null){
                 // SE A TENTATIVA OBTEVE SUCESSO, IMPRIME A MENSAGEM DE SUCESSO NO CONSOLE
